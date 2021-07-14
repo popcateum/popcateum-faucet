@@ -1,0 +1,14 @@
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./view/Home";
+import Layout from "./view/Layout";
+
+ReactDOM.render(
+    <Layout>
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home} />
+            </Switch>
+        </Router>
+    </Layout>
+    , document.getElementById("root"))
